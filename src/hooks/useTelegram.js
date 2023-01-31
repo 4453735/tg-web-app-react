@@ -1,5 +1,3 @@
-import {useEffect} from "react";
-
 const tg = window.Telegram.WebApp;
 
 export function useTelegram() {
@@ -13,7 +11,6 @@ export function useTelegram() {
     }
 
     return {
-        onClose,
         onToggleButton,
         tg,
         user: tg.initDataUnSafe?.user
